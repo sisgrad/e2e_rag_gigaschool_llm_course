@@ -1,0 +1,11 @@
+hf/*
+!hf/.gitkeep
+notebooks/**/*.py
+eda/v0/output/
+build_rag_dataset/*/output/
+build_rag_dataset/*/.cache/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/

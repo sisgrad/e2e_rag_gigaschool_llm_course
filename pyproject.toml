@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gigaschool-video-rag"
+version = "0.1.0"
+description = "End-to-end image retrieval RAG project for the GigaSchool LLM engineering course"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "cursor-sdk",
+    "datasketch",
+    "huggingface-hub",
+    "numpy",
+    "pandas",
+    "plotly",
+    "PyYAML",
+    "scikit-learn",
+    "tiktoken",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"gigaschool_rag.versions.v0" = ["resources/**/*.jsonl"]

@@ -1,0 +1,8 @@
+schema_version: 1
+dataset_version: v0
+image_dataset: pilot-500-v1
+images_root: null  # Placeholder: supply with --images-root /path/to/pilot-500-v1
+producer_run_id: pilot-500-producer-v1
+verifier_run_id: pilot-500-verifier-v1
+agreement_run_id: pilot-500-agreement-v1
+agreement_batch_size: 50

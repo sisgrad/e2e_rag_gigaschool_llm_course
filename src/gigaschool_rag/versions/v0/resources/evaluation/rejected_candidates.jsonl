@@ -1,0 +1,5 @@
+{"candidate": "Which images do not contain pedestrians?", "reason": "Closed-world false negative: absence is unjudged in this corpus."}
+{"candidate": "What happened immediately before this frame?", "reason": "Temporal answer is unavailable from a still image."}
+{"candidate": "Which district of the city is shown?", "reason": "Location identity is not part of trusted ground truth."}
+{"candidate": "Find every safe road.", "reason": "The subjective concept 'safe' is absent from the ontology."}
+{"candidate": "Which camera has the most beautiful view?", "reason": "Subjective and has no reproducible relevance rule."}
