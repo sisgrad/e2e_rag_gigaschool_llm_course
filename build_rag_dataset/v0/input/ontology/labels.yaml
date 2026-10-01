@@ -1,0 +1,3731 @@
+schema_version: rag-ontology-1
+language: en
+generated_at: '2026-09-26T21:07:15.531033+00:00'
+description: Controlled ontology for annotation-constrained image descriptions. label_id
+  is immutable; display names may clarify legacy IDs.
+labels:
+- label_id: advertisement
+  display_name: visible advertising content
+  definition: Visible advertising material or signage; the supporting structure need
+    not be a billboard.
+  required_visual_cues:
+  - Visible advertising material or signage; the supporting structure need not be
+    a billboard.
+  mutually_exclusive_with: []
+  confusable_with:
+  - billboard
+  assertion_types:
+  - object_or_feature
+  locations:
+  - layer: detailed_static
+    entity: other_features
+  aliases:
+  - text: visible advertising content
+    lang: en
+    scope: exact
+  - text: advertisement
+    lang: en
+    scope: legacy
+  - text: реклама
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - реклама
+  status: primary
+  frequency: 702
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: airport
+  display_name: airport
+  definition: The visible scene contains airport.
+  required_visual_cues:
+  - The visible scene contains airport.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - infrastructure
+  locations:
+  - layer: detailed_static
+    entity: city_infrastructure_objects
+  aliases:
+  - text: airport
+    lang: en
+    scope: exact
+  - text: аэропорт
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - аэропорт
+  status: rare
+  frequency: 9
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: airport_camera
+  display_name: airport camera
+  definition: The camera view is visually consistent with airport camera.
+  required_visual_cues:
+  - The camera view is visually consistent with airport camera.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - scene
+  locations:
+  - layer: base_static
+    entity: scene_location
+  aliases:
+  - text: airport camera
+    lang: en
+    scope: exact
+  - text: камера у аэропорта
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - камера_у_аэропорта
+  status: rare
+  frequency: 9
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: barrier
+  display_name: barrier
+  definition: The visible scene contains barrier.
+  required_visual_cues:
+  - The visible scene contains barrier.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - object_or_feature
+  locations:
+  - layer: detailed_static
+    entity: other_features
+  aliases:
+  - text: barrier
+    lang: en
+    scope: exact
+  - text: барьер
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - барьер
+  status: primary
+  frequency: 38
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: beach
+  display_name: beach
+  definition: The visible scene contains beach.
+  required_visual_cues:
+  - The visible scene contains beach.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - object_or_feature
+  locations:
+  - layer: detailed_static
+    entity: other_features
+  aliases:
+  - text: beach
+    lang: en
+    scope: exact
+  - text: пляж
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - пляж
+  status: primary
+  frequency: 38
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: bench
+  display_name: bench
+  definition: The visible scene contains bench.
+  required_visual_cues:
+  - The visible scene contains bench.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - object_or_feature
+  locations:
+  - layer: detailed_static
+    entity: other_features
+  aliases:
+  - text: bench
+    lang: en
+    scope: exact
+  - text: скамейка
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - скамейка
+  status: primary
+  frequency: 513
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: bicycle
+  display_name: bicycle
+  definition: The visible road scene is annotated with bicycle.
+  required_visual_cues:
+  - The visible road scene is annotated with bicycle.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - road_state
+  locations:
+  - layer: detailed_static
+    entity: road_situation
+  aliases:
+  - text: bicycle
+    lang: en
+    scope: exact
+  - text: велосипед
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - велосипед
+  status: primary
+  frequency: 75
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: bicycle_parking
+  display_name: bicycle parking
+  definition: The visible scene contains bicycle parking.
+  required_visual_cues:
+  - The visible scene contains bicycle parking.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - infrastructure
+  locations:
+  - layer: detailed_static
+    entity: city_infrastructure_objects
+  aliases:
+  - text: bicycle parking
+    lang: en
+    scope: exact
+  - text: парковка для велосипедов
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - парковка_для_велосипедов
+  status: primary
+  frequency: 35
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: billboard
+  display_name: billboard structure
+  definition: A large freestanding or mounted billboard structure.
+  required_visual_cues:
+  - A large freestanding or mounted billboard structure.
+  mutually_exclusive_with: []
+  confusable_with:
+  - advertisement
+  assertion_types:
+  - object_or_feature
+  locations:
+  - layer: detailed_static
+    entity: other_features
+  aliases:
+  - text: billboard structure
+    lang: en
+    scope: exact
+  - text: billboard
+    lang: en
+    scope: legacy
+  - text: билборд
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - билборд
+  status: primary
+  frequency: 704
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: black_and_white_image
+  display_name: black and white image
+  definition: The image is rendered in grayscale rather than merely being dark at
+    night.
+  required_visual_cues:
+  - The image is rendered in grayscale rather than merely being dark at night.
+  mutually_exclusive_with: []
+  confusable_with:
+  - low_light_image
+  - night
+  assertion_types:
+  - quality
+  locations:
+  - layer: base_static
+    entity: image_quality
+  aliases:
+  - text: black and white image
+    lang: en
+    scope: exact
+  - text: черно-белое изображение
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - черно-белое_изображение
+  status: primary
+  frequency: 134
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: blurred_image
+  display_name: blurred image
+  definition: Image detail is visibly lost because of blur.
+  required_visual_cues:
+  - Image detail is visibly lost because of blur.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - quality
+  locations:
+  - layer: base_static
+    entity: image_quality
+  aliases:
+  - text: blurred image
+    lang: en
+    scope: exact
+  - text: размытое изображение
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - размытое_изображение
+  status: weak
+  frequency: 203
+  merge_target: bad_quality_image
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: boom_barrier
+  display_name: boom barrier
+  definition: A clearly visible pivoting barrier arm used to control a road, parking
+    entrance, or rail crossing.
+  required_visual_cues:
+  - A clearly visible pivoting barrier arm used to control a road, parking entrance,
+    or rail crossing.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - object_or_feature
+  locations:
+  - layer: detailed_static
+    entity: other_features
+  aliases:
+  - text: boom barrier
+    lang: en
+    scope: exact
+  - text: шлагбаум
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - шлагбаум
+  status: rare
+  frequency: 17
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: bridge
+  display_name: bridge
+  definition: The visible scene contains bridge.
+  required_visual_cues:
+  - The visible scene contains bridge.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - infrastructure
+  locations:
+  - layer: detailed_static
+    entity: city_infrastructure_objects
+  aliases:
+  - text: bridge
+    lang: en
+    scope: exact
+  - text: мост
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - мост
+  status: primary
+  frequency: 202
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: bus_stop
+  display_name: bus stop
+  definition: The visible scene contains bus stop.
+  required_visual_cues:
+  - The visible scene contains bus stop.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - infrastructure
+  locations:
+  - layer: detailed_static
+    entity: city_infrastructure_objects
+  aliases:
+  - text: bus stop
+    lang: en
+    scope: exact
+  - text: автобусная остановка
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - автобусная_остановка
+  status: primary
+  frequency: 593
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: bus_terminal
+  display_name: bus terminal
+  definition: The visible scene contains bus terminal.
+  required_visual_cues:
+  - The visible scene contains bus terminal.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - infrastructure
+  locations:
+  - layer: detailed_static
+    entity: city_infrastructure_objects
+  aliases:
+  - text: bus terminal
+    lang: en
+    scope: exact
+  - text: автовокзал
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - автовокзал
+  status: rare
+  frequency: 8
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: business_center
+  display_name: business center
+  definition: The visible scene contains business center.
+  required_visual_cues:
+  - The visible scene contains business center.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - building_or_facility
+  locations:
+  - layer: detailed_static
+    entity: common_city_buildings
+  aliases:
+  - text: business center
+    lang: en
+    scope: exact
+  - text: бизнес-центр
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - бизнес-центр
+  status: primary
+  frequency: 22
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: busy_road
+  display_name: busy road traffic
+  definition: A road scene annotated as carrying substantial moving traffic.
+  required_visual_cues:
+  - A road scene annotated as carrying substantial moving traffic.
+  mutually_exclusive_with:
+  - empty_road
+  - few_cars
+  confusable_with:
+  - empty_road
+  - few_cars
+  - traffic_jam
+  assertion_types:
+  - road_state
+  locations:
+  - layer: detailed_static
+    entity: road_situation
+  aliases:
+  - text: busy road traffic
+    lang: en
+    scope: exact
+  - text: busy road
+    lang: en
+    scope: legacy
+  - text: оживленная дорога
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - оживленная_дорога
+  status: weak
+  frequency: 719
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: cafe
+  display_name: cafe or restaurant
+  definition: The visible scene contains cafe or restaurant.
+  required_visual_cues:
+  - The visible scene contains cafe or restaurant.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - building_or_facility
+  locations:
+  - layer: detailed_static
+    entity: common_city_buildings
+  aliases:
+  - text: cafe or restaurant
+    lang: en
+    scope: exact
+  - text: cafe
+    lang: en
+    scope: legacy
+  - text: кафе or ресторан
+    lang: ru
+    scope: exact
+  - text: кафе
+    lang: ru
+    scope: narrow
+  - text: ресторан
+    lang: ru
+    scope: narrow
+  - text: restaurant
+    lang: en
+    scope: narrow
+  source_labels_ru:
+  - кафе[slash]ресторан
+  status: primary
+  frequency: 84
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: camera_at_eye_level
+  display_name: eye-level camera view
+  definition: A viewpoint approximately at pedestrian eye level.
+  required_visual_cues:
+  - A viewpoint approximately at pedestrian eye level.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - viewpoint
+  locations:
+  - layer: base_static
+    entity: camera_position
+  aliases:
+  - text: eye-level camera view
+    lang: en
+    scope: exact
+  - text: camera at eye level
+    lang: en
+    scope: legacy
+  - text: камера на уровне глаз
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - камера_на_уровне_глаз
+  status: weak
+  frequency: 176
+  merge_target: camera_slightly_above_human
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: camera_at_urban_fallow_land
+  display_name: undeveloped green or vacant land
+  definition: An unmanaged green, vacant, rural, or undeveloped area; maintained parks
+    and sports grounds are excluded.
+  required_visual_cues:
+  - An unmanaged green, vacant, rural, or undeveloped area; maintained parks and sports
+    grounds are excluded.
+  mutually_exclusive_with: []
+  confusable_with:
+  - park_camera
+  - camera_on_the_sports_object
+  assertion_types:
+  - scene
+  locations:
+  - layer: base_static
+    entity: scene_location
+  aliases:
+  - text: undeveloped green or vacant land
+    lang: en
+    scope: exact
+  - text: camera at urban fallow land
+    lang: en
+    scope: legacy
+  - text: камера в необлагороженной области
+    lang: ru
+    scope: exact
+  - text: undeveloped green
+    lang: en
+    scope: narrow
+  - text: vacant land
+    lang: en
+    scope: narrow
+  source_labels_ru:
+  - камера_в_необлагороженной_области
+  status: primary
+  frequency: 29
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: camera_in_private_sector
+  display_name: low-rise private housing area
+  definition: The camera view is visually consistent with low-rise private housing
+    area.
+  required_visual_cues:
+  - The camera view is visually consistent with low-rise private housing area.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - scene
+  locations:
+  - layer: base_static
+    entity: scene_location
+  aliases:
+  - text: low-rise private housing area
+    lang: en
+    scope: exact
+  - text: camera in private sector
+    lang: en
+    scope: legacy
+  - text: камера в частном секторе
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - камера_в_частном_секторе
+  status: primary
+  frequency: 29
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: camera_inside_the_building
+  display_name: indoor camera view
+  definition: The camera view is visually consistent with indoor camera view.
+  required_visual_cues:
+  - The camera view is visually consistent with indoor camera view.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - scene
+  locations:
+  - layer: base_static
+    entity: scene_location
+  aliases:
+  - text: indoor camera view
+    lang: en
+    scope: exact
+  - text: camera inside the building
+    lang: en
+    scope: legacy
+  - text: камера внутри здания
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - камера_внутри_здания
+  status: primary
+  frequency: 33
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: camera_inside_the_bus_stop
+  display_name: view from inside a bus stop shelter
+  definition: The camera view is visually consistent with view from inside a bus stop
+    shelter.
+  required_visual_cues:
+  - The camera view is visually consistent with view from inside a bus stop shelter.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - scene
+  locations:
+  - layer: base_static
+    entity: scene_location
+  aliases:
+  - text: view from inside a bus stop shelter
+    lang: en
+    scope: exact
+  - text: camera inside the bus stop
+    lang: en
+    scope: legacy
+  - text: камера внутри остановки
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - камера_внутри_остановки
+  status: rare
+  frequency: 12
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: camera_near_bus_stop
+  display_name: street view near a bus stop
+  definition: The camera view is visually consistent with street view near a bus stop.
+  required_visual_cues:
+  - The camera view is visually consistent with street view near a bus stop.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - scene
+  locations:
+  - layer: base_static
+    entity: scene_location
+  aliases:
+  - text: street view near a bus stop
+    lang: en
+    scope: exact
+  - text: camera near bus stop
+    lang: en
+    scope: legacy
+  - text: камера на остановке
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - камера_на_остановке
+  status: weak_rare
+  frequency: 9
+  merge_target: street_camera
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: camera_near_restaurant_or_shop_entrance
+  display_name: view near a restaurant or shop entrance
+  definition: The camera view is visually consistent with view near a restaurant or
+    shop entrance.
+  required_visual_cues:
+  - The camera view is visually consistent with view near a restaurant or shop entrance.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - scene
+  locations:
+  - layer: base_static
+    entity: scene_location
+  aliases:
+  - text: view near a restaurant or shop entrance
+    lang: en
+    scope: exact
+  - text: camera near restaurant or shop entrance
+    lang: en
+    scope: legacy
+  - text: камера у заведения или магазина
+    lang: ru
+    scope: exact
+  - text: view near a restaurant
+    lang: en
+    scope: narrow
+  - text: shop entrance
+    lang: en
+    scope: narrow
+  source_labels_ru:
+  - камера_у_заведения_или_магазина
+  status: weak
+  frequency: 37
+  merge_target: street_camera
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: camera_near_the_dock
+  display_name: dock or pier camera view
+  definition: The camera view is visually consistent with dock or pier camera view.
+  required_visual_cues:
+  - The camera view is visually consistent with dock or pier camera view.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - scene
+  locations:
+  - layer: base_static
+    entity: scene_location
+  aliases:
+  - text: dock or pier camera view
+    lang: en
+    scope: exact
+  - text: camera near the dock
+    lang: en
+    scope: legacy
+  - text: камера у причала
+    lang: ru
+    scope: exact
+  - text: dock
+    lang: en
+    scope: narrow
+  - text: pier camera view
+    lang: en
+    scope: narrow
+  source_labels_ru:
+  - камера_у_причала
+  status: primary
+  frequency: 32
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: camera_near_the_path
+  display_name: camera view near a path
+  definition: The camera view is visually consistent with camera view near a path.
+  required_visual_cues:
+  - The camera view is visually consistent with camera view near a path.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - scene
+  locations:
+  - layer: base_static
+    entity: scene_location
+  aliases:
+  - text: camera view near a path
+    lang: en
+    scope: exact
+  - text: camera near the path
+    lang: en
+    scope: legacy
+  - text: камера у тропинки
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - камера_у_тропинки
+  status: weak_rare
+  frequency: 8
+  merge_target: camera_at_urban_fallow_land
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: camera_on_indudstrial_object
+  display_name: industrial site view
+  definition: The camera view is visually consistent with industrial site view.
+  required_visual_cues:
+  - The camera view is visually consistent with industrial site view.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - scene
+  locations:
+  - layer: base_static
+    entity: scene_location
+  aliases:
+  - text: industrial site view
+    lang: en
+    scope: exact
+  - text: camera on indudstrial object
+    lang: en
+    scope: legacy
+  - text: камера на объекте
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - камера_на_объекте
+  status: rare
+  frequency: 13
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: camera_on_the_exit_from_the_city
+  display_name: road view at a city exit
+  definition: The camera view is visually consistent with road view at a city exit.
+  required_visual_cues:
+  - The camera view is visually consistent with road view at a city exit.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - scene
+  locations:
+  - layer: base_static
+    entity: scene_location
+  aliases:
+  - text: road view at a city exit
+    lang: en
+    scope: exact
+  - text: camera on the exit from the city
+    lang: en
+    scope: legacy
+  - text: камера на выезде из города
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - камера_на_выезде_из_города
+  status: weak
+  frequency: 29
+  merge_target: street_camera
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: camera_on_the_roof
+  display_name: high-elevation overview
+  definition: A high-elevation overview, generally above 10 metres, looking down from
+    a roof or comparable structure.
+  required_visual_cues:
+  - A high-elevation overview, generally above 10 metres, looking down from a roof
+    or comparable structure.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - viewpoint
+  locations:
+  - layer: base_static
+    entity: camera_position
+  aliases:
+  - text: high-elevation overview
+    lang: en
+    scope: exact
+  - text: camera on the roof
+    lang: en
+    scope: legacy
+  - text: камера на крыше
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - камера_на_крыше
+  status: weak
+  frequency: 1632
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: camera_on_the_sports_object
+  display_name: sports facility scene
+  definition: A scene dominated by a sports facility, field, court, track, or dedicated
+    exercise area.
+  required_visual_cues:
+  - A scene dominated by a sports facility, field, court, track, or dedicated exercise
+    area.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - scene
+  locations:
+  - layer: base_static
+    entity: scene_location
+  aliases:
+  - text: sports facility scene
+    lang: en
+    scope: exact
+  - text: camera on the sports object
+    lang: en
+    scope: legacy
+  - text: камера на спортивном объекте
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - камера_на_спортивном_объекте
+  status: primary
+  frequency: 41
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: camera_over_the_entrance
+  display_name: camera view above a building entrance
+  definition: The camera view is visually consistent with camera view above a building
+    entrance.
+  required_visual_cues:
+  - The camera view is visually consistent with camera view above a building entrance.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - scene
+  locations:
+  - layer: base_static
+    entity: scene_location
+  aliases:
+  - text: camera view above a building entrance
+    lang: en
+    scope: exact
+  - text: camera over the entrance
+    lang: en
+    scope: legacy
+  - text: камера над подъездом
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - камера_над_подъездом
+  status: weak_rare
+  frequency: 13
+  merge_target: residential_area_camera
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: camera_slightly_above_human
+  display_name: low-elevation camera view
+  definition: A low-elevation viewpoint, generally below 10 metres, at or moderately
+    above pedestrian level.
+  required_visual_cues:
+  - A low-elevation viewpoint, generally below 10 metres, at or moderately above pedestrian
+    level.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - viewpoint
+  locations:
+  - layer: base_static
+    entity: camera_position
+  aliases:
+  - text: low-elevation camera view
+    lang: en
+    scope: exact
+  - text: camera slightly above human
+    lang: en
+    scope: legacy
+  - text: камера чуть выше человека
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - камера_чуть_выше_человека
+  status: primary
+  frequency: 1188
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: car_parking
+  display_name: general car parking area
+  definition: A visible area used for parking cars, independent of residential context.
+  required_visual_cues:
+  - A visible area used for parking cars, independent of residential context.
+  mutually_exclusive_with: []
+  confusable_with:
+  - residential_parking
+  - underground_parking
+  assertion_types:
+  - infrastructure
+  locations:
+  - layer: detailed_static
+    entity: city_infrastructure_objects
+  aliases:
+  - text: general car parking area
+    lang: en
+    scope: exact
+  - text: car parking
+    lang: en
+    scope: legacy
+  - text: автомобильная парковка
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - автомобильная_парковка
+  status: primary
+  frequency: 1698
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: car_wash
+  display_name: car wash
+  definition: The visible scene contains car wash.
+  required_visual_cues:
+  - The visible scene contains car wash.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - infrastructure
+  locations:
+  - layer: detailed_static
+    entity: city_infrastructure_objects
+  aliases:
+  - text: car wash
+    lang: en
+    scope: exact
+  - text: автомойка
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - автомойка
+  status: rare
+  frequency: 13
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: church
+  display_name: church
+  definition: The visible scene contains church.
+  required_visual_cues:
+  - The visible scene contains church.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - building_or_facility
+  locations:
+  - layer: detailed_static
+    entity: common_city_buildings
+  aliases:
+  - text: church
+    lang: en
+    scope: exact
+  - text: церковь
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - церковь
+  status: primary
+  frequency: 90
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: city_square
+  display_name: city square
+  definition: The visible scene contains city square.
+  required_visual_cues:
+  - The visible scene contains city square.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - infrastructure
+  locations:
+  - layer: detailed_static
+    entity: city_infrastructure_objects
+  aliases:
+  - text: city square
+    lang: en
+    scope: exact
+  - text: городская площадь
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - городская_площадь
+  status: primary
+  frequency: 57
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: clear_sky
+  display_name: clear sky
+  definition: Visible sky is predominantly clear and without substantial cloud cover.
+  required_visual_cues:
+  - Visible sky is predominantly clear and without substantial cloud cover.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - weather
+  locations:
+  - layer: base_static
+    entity: weather_conditions
+  aliases:
+  - text: clear sky
+    lang: en
+    scope: exact
+  - text: ясное небо
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - ясное_небо
+  status: primary
+  frequency: 524
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: cloudy
+  display_name: cloudy
+  definition: Cloud cover is visible and dominates the weather appearance.
+  required_visual_cues:
+  - Cloud cover is visible and dominates the weather appearance.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - weather
+  locations:
+  - layer: base_static
+    entity: weather_conditions
+  aliases:
+  - text: cloudy
+    lang: en
+    scope: exact
+  - text: облачно
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - облачно
+  status: primary
+  frequency: 895
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: construction_site
+  display_name: construction site
+  definition: The visible scene contains construction site.
+  required_visual_cues:
+  - The visible scene contains construction site.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - building_or_facility
+  locations:
+  - layer: detailed_static
+    entity: common_city_buildings
+  aliases:
+  - text: construction site
+    lang: en
+    scope: exact
+  - text: строительная площадка
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - строительная_площадка
+  status: primary
+  frequency: 99
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: crowd
+  display_name: crowd
+  definition: A dense or substantial group of pedestrians is visible.
+  required_visual_cues:
+  - A dense or substantial group of pedestrians is visible.
+  mutually_exclusive_with:
+  - without_pedestrians
+  confusable_with:
+  - without_pedestrians
+  - several_pedestrians
+  assertion_types:
+  - object_or_feature
+  locations:
+  - layer: detailed_static
+    entity: other_features
+  aliases:
+  - text: crowd
+    lang: en
+    scope: exact
+  - text: толпа пешеходов
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - толпа_пешеходов
+  status: primary
+  frequency: 205
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: damaged_color_camera
+  display_name: damaged color camera
+  definition: The image has abnormal or damaged colour reproduction.
+  required_visual_cues:
+  - The image has abnormal or damaged colour reproduction.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - quality
+  locations:
+  - layer: base_static
+    entity: image_quality
+  aliases:
+  - text: damaged color camera
+    lang: en
+    scope: exact
+  - text: камера с поврежденной цветностью
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - камера_с_поврежденной_цветностью
+  status: weak_rare
+  frequency: 8
+  merge_target: bad_quality_image
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: day
+  display_name: day
+  definition: The visible lighting and scene appearance indicate day.
+  required_visual_cues:
+  - The visible lighting and scene appearance indicate day.
+  mutually_exclusive_with:
+  - night
+  confusable_with: []
+  assertion_types:
+  - time
+  locations:
+  - layer: base_static
+    entity: time_of_day
+  aliases:
+  - text: day
+    lang: en
+    scope: exact
+  - text: день
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - день
+  status: primary
+  frequency: 1097
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: dirty_camera_image
+  display_name: dirty camera image
+  definition: Lens or cover contamination visibly degrades the image.
+  required_visual_cues:
+  - Lens or cover contamination visibly degrades the image.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - quality
+  locations:
+  - layer: base_static
+    entity: image_quality
+  aliases:
+  - text: dirty camera image
+    lang: en
+    scope: exact
+  - text: загрязненная камера
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - загрязненная_камера
+  status: weak
+  frequency: 55
+  merge_target: bad_quality_image
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: embankment
+  display_name: embankment
+  definition: The visible scene contains embankment.
+  required_visual_cues:
+  - The visible scene contains embankment.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - object_or_feature
+  locations:
+  - layer: detailed_static
+    entity: other_features
+  aliases:
+  - text: embankment
+    lang: en
+    scope: exact
+  - text: набережная
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - набережная
+  status: primary
+  frequency: 80
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: empty_road
+  display_name: road with no visible vehicles
+  definition: A visible road segment annotated as containing no vehicles.
+  required_visual_cues:
+  - A visible road segment annotated as containing no vehicles.
+  mutually_exclusive_with:
+  - few_cars
+  - busy_road
+  - traffic_jam
+  confusable_with:
+  - few_cars
+  - busy_road
+  - traffic_jam
+  assertion_types:
+  - road_state
+  locations:
+  - layer: detailed_static
+    entity: road_situation
+  aliases:
+  - text: road with no visible vehicles
+    lang: en
+    scope: exact
+  - text: empty road
+    lang: en
+    scope: legacy
+  - text: пустая дорога
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - пустая_дорога
+  status: weak
+  frequency: 583
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: entrance_group
+  display_name: entrance group
+  definition: The visible scene contains entrance group.
+  required_visual_cues:
+  - The visible scene contains entrance group.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - object_or_feature
+  locations:
+  - layer: detailed_static
+    entity: other_features
+  aliases:
+  - text: entrance group
+    lang: en
+    scope: exact
+  - text: входная группа
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - входная_группа
+  status: primary
+  frequency: 239
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: entrance_to_apartment_block
+  display_name: entrance to apartment block
+  definition: The visible scene contains entrance to apartment block.
+  required_visual_cues:
+  - The visible scene contains entrance to apartment block.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - building_or_facility
+  locations:
+  - layer: detailed_static
+    entity: common_city_buildings
+  aliases:
+  - text: entrance to apartment block
+    lang: en
+    scope: exact
+  - text: вход в подъезд
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - вход_в_подъезд
+  status: primary
+  frequency: 66
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: evening
+  display_name: evening
+  definition: The visible lighting and scene appearance indicate evening.
+  required_visual_cues:
+  - The visible lighting and scene appearance indicate evening.
+  mutually_exclusive_with:
+  - morning
+  confusable_with: []
+  assertion_types:
+  - time
+  locations:
+  - layer: base_static
+    entity: time_of_day
+  aliases:
+  - text: evening
+    lang: en
+    scope: exact
+  - text: вечер
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - вечер
+  status: weak
+  frequency: 1113
+  merge_target: day
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: factory
+  display_name: factory
+  definition: The visible scene contains factory.
+  required_visual_cues:
+  - The visible scene contains factory.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - building_or_facility
+  locations:
+  - layer: detailed_static
+    entity: common_city_buildings
+  aliases:
+  - text: factory
+    lang: en
+    scope: exact
+  - text: завод
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - завод
+  status: rare
+  frequency: 5
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: few_cars
+  display_name: few visible vehicles
+  definition: A road scene annotated as containing a small number of vehicles.
+  required_visual_cues:
+  - A road scene annotated as containing a small number of vehicles.
+  mutually_exclusive_with:
+  - empty_road
+  - busy_road
+  confusable_with:
+  - empty_road
+  - busy_road
+  - traffic_jam
+  assertion_types:
+  - road_state
+  locations:
+  - layer: detailed_static
+    entity: road_situation
+  aliases:
+  - text: few visible vehicles
+    lang: en
+    scope: exact
+  - text: few cars
+    lang: en
+    scope: legacy
+  - text: мало машин
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - мало_машин
+  status: weak
+  frequency: 1290
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: fire
+  display_name: fire
+  definition: The visible scene contains fire.
+  required_visual_cues:
+  - The visible scene contains fire.
+  mutually_exclusive_with: []
+  confusable_with:
+  - smoke
+  assertion_types:
+  - object_or_feature
+  locations:
+  - layer: detailed_static
+    entity: other_features
+  aliases:
+  - text: fire
+    lang: en
+    scope: exact
+  - text: огонь
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - огонь
+  status: rare
+  frequency: 3
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: foggy
+  display_name: foggy
+  definition: The visible weather condition is foggy.
+  required_visual_cues:
+  - The visible weather condition is foggy.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - weather
+  locations:
+  - layer: base_static
+    entity: weather_conditions
+  aliases:
+  - text: foggy
+    lang: en
+    scope: exact
+  - text: туманно
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - туманно
+  status: primary
+  frequency: 107
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: football_field
+  display_name: football field
+  definition: The visible scene contains football field.
+  required_visual_cues:
+  - The visible scene contains football field.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - building_or_facility
+  locations:
+  - layer: detailed_static
+    entity: common_city_buildings
+  aliases:
+  - text: football field
+    lang: en
+    scope: exact
+  - text: футбольное поле
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - футбольное_поле
+  status: primary
+  frequency: 21
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: forest
+  display_name: forest or dense tree cover
+  definition: A scene containing forest or dense woody vegetation, not merely isolated
+    urban trees.
+  required_visual_cues:
+  - A scene containing forest or dense woody vegetation, not merely isolated urban
+    trees.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - object_or_feature
+  locations:
+  - layer: detailed_static
+    entity: other_features
+  aliases:
+  - text: forest or dense tree cover
+    lang: en
+    scope: exact
+  - text: forest
+    lang: en
+    scope: legacy
+  - text: лес or плотные насаждения
+    lang: ru
+    scope: exact
+  - text: лес
+    lang: ru
+    scope: narrow
+  - text: плотные насаждения
+    lang: ru
+    scope: narrow
+  - text: dense tree cover
+    lang: en
+    scope: narrow
+  source_labels_ru:
+  - лес[slash]плотные_насаждения
+  status: primary
+  frequency: 1441
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: fountain
+  display_name: fountain
+  definition: The visible scene contains fountain.
+  required_visual_cues:
+  - The visible scene contains fountain.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - object_or_feature
+  locations:
+  - layer: detailed_static
+    entity: other_features
+  aliases:
+  - text: fountain
+    lang: en
+    scope: exact
+  - text: фонтан
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - фонтан
+  status: primary
+  frequency: 74
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: garage
+  display_name: garage
+  definition: The visible scene contains garage.
+  required_visual_cues:
+  - The visible scene contains garage.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - building_or_facility
+  locations:
+  - layer: detailed_static
+    entity: common_city_buildings
+  aliases:
+  - text: garage
+    lang: en
+    scope: exact
+  - text: гараж (один)
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - гараж_(один)
+  status: rare
+  frequency: 9
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: garage_complex
+  display_name: garage complex
+  definition: The visible scene contains garage complex.
+  required_visual_cues:
+  - The visible scene contains garage complex.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - building_or_facility
+  locations:
+  - layer: detailed_static
+    entity: common_city_buildings
+  aliases:
+  - text: garage complex
+    lang: en
+    scope: exact
+  - text: гаражный кооператив
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - гаражный_кооператив
+  status: primary
+  frequency: 47
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: gas_station
+  display_name: gas station
+  definition: The visible scene contains gas station.
+  required_visual_cues:
+  - The visible scene contains gas station.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - infrastructure
+  locations:
+  - layer: detailed_static
+    entity: city_infrastructure_objects
+  aliases:
+  - text: gas station
+    lang: en
+    scope: exact
+  - text: заправочная станция
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - заправочная_станция
+  status: primary
+  frequency: 83
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: gate
+  display_name: gate
+  definition: The visible scene contains gate.
+  required_visual_cues:
+  - The visible scene contains gate.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - object_or_feature
+  locations:
+  - layer: detailed_static
+    entity: other_features
+  aliases:
+  - text: gate
+    lang: en
+    scope: exact
+  - text: ворота
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - ворота
+  status: primary
+  frequency: 38
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: high_fence
+  display_name: high fence
+  definition: The visible scene contains high fence.
+  required_visual_cues:
+  - The visible scene contains high fence.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - object_or_feature
+  locations:
+  - layer: detailed_static
+    entity: other_features
+  aliases:
+  - text: high fence
+    lang: en
+    scope: exact
+  - text: высокий забор
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - высокий_забор
+  status: primary
+  frequency: 337
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: hill
+  display_name: hill
+  definition: The visible scene contains hill.
+  required_visual_cues:
+  - The visible scene contains hill.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - object_or_feature
+  locations:
+  - layer: detailed_static
+    entity: other_features
+  aliases:
+  - text: hill
+    lang: en
+    scope: exact
+  - text: холм
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - холм
+  status: primary
+  frequency: 121
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: hospital
+  display_name: hospital
+  definition: The visible scene contains hospital.
+  required_visual_cues:
+  - The visible scene contains hospital.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - infrastructure
+  locations:
+  - layer: detailed_static
+    entity: city_infrastructure_objects
+  aliases:
+  - text: hospital
+    lang: en
+    scope: exact
+  - text: больница
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - больница
+  status: rare
+  frequency: 12
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: hotel
+  display_name: hotel
+  definition: The visible scene contains hotel.
+  required_visual_cues:
+  - The visible scene contains hotel.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - building_or_facility
+  locations:
+  - layer: detailed_static
+    entity: common_city_buildings
+  aliases:
+  - text: hotel
+    lang: en
+    scope: exact
+  - text: отель or гостиница
+    lang: ru
+    scope: exact
+  - text: отель
+    lang: ru
+    scope: narrow
+  - text: гостиница
+    lang: ru
+    scope: narrow
+  source_labels_ru:
+  - отель[slash]гостиница
+  status: primary
+  frequency: 23
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: in_a_cafe
+  display_name: in a cafe
+  definition: The indoor scene is classified as in a cafe.
+  required_visual_cues:
+  - The indoor scene is classified as in a cafe.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - indoor_scene
+  locations:
+  - layer: detailed_static
+    entity: indoor_type
+  aliases:
+  - text: in a cafe
+    lang: en
+    scope: exact
+  - text: в кафе or ресторане
+    lang: ru
+    scope: exact
+  - text: в кафе
+    lang: ru
+    scope: narrow
+  - text: ресторане
+    lang: ru
+    scope: narrow
+  source_labels_ru:
+  - в_кафе[slash]ресторане
+  status: rare
+  frequency: 3
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: in_a_sports_facility
+  display_name: in a sports facility
+  definition: The indoor scene is classified as in a sports facility.
+  required_visual_cues:
+  - The indoor scene is classified as in a sports facility.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - indoor_scene
+  locations:
+  - layer: detailed_static
+    entity: indoor_type
+  aliases:
+  - text: in a sports facility
+    lang: en
+    scope: exact
+  - text: в спортивной секции
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - в_спортивной_секции
+  status: rare
+  frequency: 3
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: in_a_store
+  display_name: in a store
+  definition: The indoor scene is classified as in a store.
+  required_visual_cues:
+  - The indoor scene is classified as in a store.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - indoor_scene
+  locations:
+  - layer: detailed_static
+    entity: indoor_type
+  aliases:
+  - text: in a store
+    lang: en
+    scope: exact
+  - text: в магазине
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - в_магазине
+  status: rare
+  frequency: 3
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: in_an_undefined_room
+  display_name: in an undefined room
+  definition: The indoor scene is classified as in an undefined room.
+  required_visual_cues:
+  - The indoor scene is classified as in an undefined room.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - indoor_scene
+  locations:
+  - layer: detailed_static
+    entity: indoor_type
+  aliases:
+  - text: in an undefined room
+    lang: en
+    scope: exact
+  - text: в неопределенном помещении
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - в_неопределенном_помещении
+  status: rare
+  frequency: 1
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: in_the_kitchen
+  display_name: in the kitchen
+  definition: The indoor scene is classified as in the kitchen.
+  required_visual_cues:
+  - The indoor scene is classified as in the kitchen.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - indoor_scene
+  locations:
+  - layer: detailed_static
+    entity: indoor_type
+  aliases:
+  - text: in the kitchen
+    lang: en
+    scope: exact
+  - text: на кухне
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - на_кухне
+  status: primary
+  frequency: 24
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: industrial_building
+  display_name: industrial building
+  definition: The visible scene contains industrial building.
+  required_visual_cues:
+  - The visible scene contains industrial building.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - building_or_facility
+  locations:
+  - layer: detailed_static
+    entity: common_city_buildings
+  aliases:
+  - text: industrial building
+    lang: en
+    scope: exact
+  - text: промышленное здание
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - промышленное_здание
+  status: primary
+  frequency: 44
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: intersection
+  display_name: intersection
+  definition: The visible road scene is annotated with intersection.
+  required_visual_cues:
+  - The visible road scene is annotated with intersection.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - road_state
+  locations:
+  - layer: detailed_static
+    entity: road_situation
+  aliases:
+  - text: intersection
+    lang: en
+    scope: exact
+  - text: перекресток
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - перекресток
+  status: primary
+  frequency: 1344
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: kindergarten
+  display_name: kindergarten
+  definition: The visible scene contains kindergarten.
+  required_visual_cues:
+  - The visible scene contains kindergarten.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - building_or_facility
+  locations:
+  - layer: detailed_static
+    entity: common_city_buildings
+  aliases:
+  - text: kindergarten
+    lang: en
+    scope: exact
+  - text: детский сад
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - детский_сад
+  status: rare
+  frequency: 3
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: kiosk
+  display_name: kiosk
+  definition: The visible scene contains kiosk.
+  required_visual_cues:
+  - The visible scene contains kiosk.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - building_or_facility
+  locations:
+  - layer: detailed_static
+    entity: common_city_buildings
+  aliases:
+  - text: kiosk
+    lang: en
+    scope: exact
+  - text: ларек or киоск
+    lang: ru
+    scope: exact
+  - text: ларек
+    lang: ru
+    scope: narrow
+  - text: киоск
+    lang: ru
+    scope: narrow
+  source_labels_ru:
+  - ларек[slash]киоск
+  status: primary
+  frequency: 300
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: low_light_image
+  display_name: low light image
+  definition: The image is visibly dark or poorly illuminated.
+  required_visual_cues:
+  - The image is visibly dark or poorly illuminated.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - quality
+  locations:
+  - layer: base_static
+    entity: image_quality
+  aliases:
+  - text: low light image
+    lang: en
+    scope: exact
+  - text: низкая освещенность
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - низкая_освещенность
+  status: primary
+  frequency: 526
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: market
+  display_name: market
+  definition: The visible scene contains market.
+  required_visual_cues:
+  - The visible scene contains market.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - infrastructure
+  locations:
+  - layer: detailed_static
+    entity: city_infrastructure_objects
+  aliases:
+  - text: market
+    lang: en
+    scope: exact
+  - text: рынок
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - рынок
+  status: rare
+  frequency: 17
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: metro_entrance
+  display_name: metro entrance
+  definition: The visible scene contains metro entrance.
+  required_visual_cues:
+  - The visible scene contains metro entrance.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - infrastructure
+  locations:
+  - layer: detailed_static
+    entity: city_infrastructure_objects
+  aliases:
+  - text: metro entrance
+    lang: en
+    scope: exact
+  - text: вход в метро
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - вход_в_метро
+  status: rare
+  frequency: 3
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: metro_exit
+  display_name: metro exit
+  definition: The visible scene contains metro exit.
+  required_visual_cues:
+  - The visible scene contains metro exit.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - infrastructure
+  locations:
+  - layer: detailed_static
+    entity: city_infrastructure_objects
+  aliases:
+  - text: metro exit
+    lang: en
+    scope: exact
+  - text: выход из метро
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - выход_из_метро
+  status: rare
+  frequency: 3
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: morning
+  display_name: morning
+  definition: The visible lighting and scene appearance indicate morning.
+  required_visual_cues:
+  - The visible lighting and scene appearance indicate morning.
+  mutually_exclusive_with:
+  - evening
+  confusable_with: []
+  assertion_types:
+  - time
+  locations:
+  - layer: base_static
+    entity: time_of_day
+  aliases:
+  - text: morning
+    lang: en
+    scope: exact
+  - text: утро
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - утро
+  status: weak
+  frequency: 378
+  merge_target: day
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: moto_parking
+  display_name: moped or scooter parking
+  definition: The visible scene contains moped or scooter parking.
+  required_visual_cues:
+  - The visible scene contains moped or scooter parking.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - infrastructure
+  locations:
+  - layer: detailed_static
+    entity: city_infrastructure_objects
+  aliases:
+  - text: moped or scooter parking
+    lang: en
+    scope: exact
+  - text: moto parking
+    lang: en
+    scope: legacy
+  - text: парковка для мопедов or самокатов
+    lang: ru
+    scope: exact
+  - text: парковка для мопедов
+    lang: ru
+    scope: narrow
+  - text: самокатов
+    lang: ru
+    scope: narrow
+  - text: moped
+    lang: en
+    scope: narrow
+  - text: scooter parking
+    lang: en
+    scope: narrow
+  source_labels_ru:
+  - парковка_для_мопедов[slash]самокатов
+  status: primary
+  frequency: 158
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: motorcycle
+  display_name: motorcycle
+  definition: The visible road scene is annotated with motorcycle.
+  required_visual_cues:
+  - The visible road scene is annotated with motorcycle.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - road_state
+  locations:
+  - layer: detailed_static
+    entity: road_situation
+  aliases:
+  - text: motorcycle
+    lang: en
+    scope: exact
+  - text: мотоцикл
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - мотоцикл
+  status: primary
+  frequency: 61
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: mountain
+  display_name: mountain
+  definition: The visible scene contains mountain.
+  required_visual_cues:
+  - The visible scene contains mountain.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - object_or_feature
+  locations:
+  - layer: detailed_static
+    entity: other_features
+  aliases:
+  - text: mountain
+    lang: en
+    scope: exact
+  - text: гора
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - гора
+  status: primary
+  frequency: 106
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: multi-storey_residential_building
+  display_name: multi storey residential building
+  definition: The visible scene contains multi storey residential building.
+  required_visual_cues:
+  - The visible scene contains multi storey residential building.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - building_or_facility
+  locations:
+  - layer: detailed_static
+    entity: common_city_buildings
+  aliases:
+  - text: multi storey residential building
+    lang: en
+    scope: exact
+  - text: multi-storey residential building
+    lang: en
+    scope: legacy
+  - text: жилой дом (многоэтажный)
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - жилой_дом_(многоэтажный)
+  status: primary
+  frequency: 1785
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: municipal_building
+  display_name: municipal building
+  definition: The visible scene contains municipal building.
+  required_visual_cues:
+  - The visible scene contains municipal building.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - building_or_facility
+  locations:
+  - layer: detailed_static
+    entity: common_city_buildings
+  aliases:
+  - text: municipal building
+    lang: en
+    scope: exact
+  - text: муниципальное здание
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - муниципальное_здание
+  status: primary
+  frequency: 115
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: municipal_transport
+  display_name: municipal service vehicle
+  definition: The visible road scene is annotated with municipal service vehicle.
+  required_visual_cues:
+  - The visible road scene is annotated with municipal service vehicle.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - road_state
+  locations:
+  - layer: detailed_static
+    entity: road_situation
+  aliases:
+  - text: municipal service vehicle
+    lang: en
+    scope: exact
+  - text: municipal transport
+    lang: en
+    scope: legacy
+  - text: коммунальный транспорт
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - коммунальный_транспорт
+  status: primary
+  frequency: 66
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: night
+  display_name: night
+  definition: The visible lighting and scene appearance indicate night.
+  required_visual_cues:
+  - The visible lighting and scene appearance indicate night.
+  mutually_exclusive_with:
+  - day
+  confusable_with: []
+  assertion_types:
+  - time
+  locations:
+  - layer: base_static
+    entity: time_of_day
+  aliases:
+  - text: night
+    lang: en
+    scope: exact
+  - text: ночь
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - ночь
+  status: primary
+  frequency: 404
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: overexposed_image
+  display_name: overexposed image
+  definition: Bright regions are clipped or washed out by excessive exposure.
+  required_visual_cues:
+  - Bright regions are clipped or washed out by excessive exposure.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - quality
+  locations:
+  - layer: base_static
+    entity: image_quality
+  aliases:
+  - text: overexposed image
+    lang: en
+    scope: exact
+  - text: переосвещенное изображение
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - переосвещенное_изображение
+  status: weak
+  frequency: 87
+  merge_target: bad_quality_image
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: park
+  display_name: park
+  definition: The visible scene contains park.
+  required_visual_cues:
+  - The visible scene contains park.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - infrastructure
+  locations:
+  - layer: detailed_static
+    entity: city_infrastructure_objects
+  aliases:
+  - text: park
+    lang: en
+    scope: exact
+  - text: парк
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - парк
+  status: primary
+  frequency: 222
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: park_camera
+  display_name: park camera
+  definition: The camera view is visually consistent with park camera.
+  required_visual_cues:
+  - The camera view is visually consistent with park camera.
+  mutually_exclusive_with: []
+  confusable_with:
+  - camera_at_urban_fallow_land
+  - forest
+  assertion_types:
+  - scene
+  locations:
+  - layer: base_static
+    entity: scene_location
+  aliases:
+  - text: park camera
+    lang: en
+    scope: exact
+  - text: камера на площади или в парке
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - камера_на_площади_или_в_парке
+  status: primary
+  frequency: 256
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: parking_camera
+  display_name: parking camera
+  definition: The camera view is visually consistent with parking camera.
+  required_visual_cues:
+  - The camera view is visually consistent with parking camera.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - scene
+  locations:
+  - layer: base_static
+    entity: scene_location
+  aliases:
+  - text: parking camera
+    lang: en
+    scope: exact
+  - text: камера на парковке
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - камера_на_парковке
+  status: primary
+  frequency: 30
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: partially_blocked_image
+  display_name: partially blocked image
+  definition: A substantial part of the camera view is occluded by a near-camera foreground
+    obstruction; ordinary fences or objects that belong to the scene do not qualify
+    by themselves.
+  required_visual_cues:
+  - A substantial part of the camera view is occluded by a near-camera foreground
+    obstruction; ordinary fences or objects that belong to the scene do not qualify
+    by themselves.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - quality
+  locations:
+  - layer: base_static
+    entity: image_quality
+  aliases:
+  - text: partially blocked image
+    lang: en
+    scope: exact
+  - text: перекрытое изображение
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - перекрытое_изображение
+  status: weak
+  frequency: 672
+  merge_target: bad_quality_image
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: pedestrian_crossing
+  display_name: pedestrian crossing
+  definition: The visible road scene is annotated with pedestrian crossing.
+  required_visual_cues:
+  - The visible road scene is annotated with pedestrian crossing.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - road_state
+  locations:
+  - layer: detailed_static
+    entity: road_situation
+  aliases:
+  - text: pedestrian crossing
+    lang: en
+    scope: exact
+  - text: пешеходный переход
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - пешеходный_переход
+  status: primary
+  frequency: 1742
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: pedestrian_underpass
+  display_name: pedestrian underpass
+  definition: The visible scene contains pedestrian underpass.
+  required_visual_cues:
+  - The visible scene contains pedestrian underpass.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - infrastructure
+  locations:
+  - layer: detailed_static
+    entity: city_infrastructure_objects
+  aliases:
+  - text: pedestrian underpass
+    lang: en
+    scope: exact
+  - text: подземный пешеходный переход
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - подземный_пешеходный_переход
+  status: primary
+  frequency: 22
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: pharmacy
+  display_name: pharmacy
+  definition: The visible scene contains pharmacy.
+  required_visual_cues:
+  - The visible scene contains pharmacy.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - building_or_facility
+  locations:
+  - layer: detailed_static
+    entity: common_city_buildings
+  aliases:
+  - text: pharmacy
+    lang: en
+    scope: exact
+  - text: аптека
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - аптека
+  status: primary
+  frequency: 87
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: pier
+  display_name: pier
+  definition: The visible scene contains pier.
+  required_visual_cues:
+  - The visible scene contains pier.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - building_or_facility
+  locations:
+  - layer: detailed_static
+    entity: common_city_buildings
+  aliases:
+  - text: pier
+    lang: en
+    scope: exact
+  - text: причал
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - причал
+  status: primary
+  frequency: 36
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: playground
+  display_name: playground
+  definition: The visible scene contains playground.
+  required_visual_cues:
+  - The visible scene contains playground.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - building_or_facility
+  locations:
+  - layer: detailed_static
+    entity: common_city_buildings
+  aliases:
+  - text: playground
+    lang: en
+    scope: exact
+  - text: детская площадка
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - детская_площадка
+  status: primary
+  frequency: 133
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: private_house
+  display_name: private house
+  definition: The visible scene contains private house.
+  required_visual_cues:
+  - The visible scene contains private house.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - building_or_facility
+  locations:
+  - layer: detailed_static
+    entity: common_city_buildings
+  aliases:
+  - text: private house
+    lang: en
+    scope: exact
+  - text: частный дом (один)
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - частный_дом_(один)
+  status: primary
+  frequency: 55
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: private_sector
+  display_name: private sector
+  definition: The visible scene contains private sector.
+  required_visual_cues:
+  - The visible scene contains private sector.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - building_or_facility
+  locations:
+  - layer: detailed_static
+    entity: common_city_buildings
+  aliases:
+  - text: private sector
+    lang: en
+    scope: exact
+  - text: частные дома (массив)
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - частные_дома_(массив)
+  status: primary
+  frequency: 170
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: public_transport
+  display_name: passenger public transport
+  definition: The visible road scene is annotated with passenger public transport.
+  required_visual_cues:
+  - The visible road scene is annotated with passenger public transport.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - road_state
+  locations:
+  - layer: detailed_static
+    entity: road_situation
+  aliases:
+  - text: passenger public transport
+    lang: en
+    scope: exact
+  - text: public transport
+    lang: en
+    scope: legacy
+  - text: общественный транспорт
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - общественный_транспорт
+  status: primary
+  frequency: 596
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: puddles
+  display_name: puddles
+  definition: Standing water or puddles are visibly present on the ground.
+  required_visual_cues:
+  - Standing water or puddles are visibly present on the ground.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - weather
+  locations:
+  - layer: base_static
+    entity: weather_conditions
+  aliases:
+  - text: puddles
+    lang: en
+    scope: exact
+  - text: лужи
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - лужи
+  status: weak
+  frequency: 352
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: railway
+  display_name: railway
+  definition: Visible railway tracks or rail corridor, whether or not a station is
+    present.
+  required_visual_cues:
+  - Visible railway tracks or rail corridor, whether or not a station is present.
+  mutually_exclusive_with: []
+  confusable_with:
+  - railway_station
+  - train_station
+  assertion_types:
+  - road_state
+  locations:
+  - layer: detailed_static
+    entity: road_situation
+  aliases:
+  - text: railway
+    lang: en
+    scope: exact
+  - text: железная дорога
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - железная_дорога
+  status: primary
+  frequency: 156
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: railway_camera
+  display_name: railway camera
+  definition: The camera view is visually consistent with railway camera.
+  required_visual_cues:
+  - The camera view is visually consistent with railway camera.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - scene
+  locations:
+  - layer: base_static
+    entity: scene_location
+  aliases:
+  - text: railway camera
+    lang: en
+    scope: exact
+  - text: камера на жд путях
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - камера_на_жд_путях
+  status: rare
+  frequency: 5
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: railway_station
+  display_name: rail stop or station infrastructure
+  definition: Rail stop or station infrastructure such as platforms, tracks, or a
+    small station area.
+  required_visual_cues:
+  - Rail stop or station infrastructure such as platforms, tracks, or a small station
+    area.
+  mutually_exclusive_with: []
+  confusable_with:
+  - railway
+  - train_station
+  assertion_types:
+  - infrastructure
+  locations:
+  - layer: detailed_static
+    entity: city_infrastructure_objects
+  aliases:
+  - text: rail stop or station infrastructure
+    lang: en
+    scope: exact
+  - text: railway station
+    lang: en
+    scope: legacy
+  - text: железнодорожная станция
+    lang: ru
+    scope: exact
+  - text: rail stop
+    lang: en
+    scope: narrow
+  - text: station infrastructure
+    lang: en
+    scope: narrow
+  source_labels_ru:
+  - железнодорожная_станция
+  status: primary
+  frequency: 24
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: rain_clouds
+  display_name: dark rain clouds
+  definition: Dark, heavy clouds consistent with impending or recent rain are visible.
+  required_visual_cues:
+  - Dark, heavy clouds consistent with impending or recent rain are visible.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - weather
+  locations:
+  - layer: base_static
+    entity: weather_conditions
+  aliases:
+  - text: dark rain clouds
+    lang: en
+    scope: exact
+  - text: rain clouds
+    lang: en
+    scope: legacy
+  - text: тучи
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - тучи
+  status: primary
+  frequency: 398
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: rain_passed
+  display_name: post-rain wet conditions
+  definition: Wet surfaces indicate recent rain without asserting that rain is currently
+    falling.
+  required_visual_cues:
+  - Wet surfaces indicate recent rain without asserting that rain is currently falling.
+  mutually_exclusive_with:
+  - raining
+  confusable_with:
+  - raining
+  assertion_types:
+  - weather
+  locations:
+  - layer: base_static
+    entity: weather_conditions
+  aliases:
+  - text: post-rain wet conditions
+    lang: en
+    scope: exact
+  - text: rain passed
+    lang: en
+    scope: legacy
+  - text: прошел дождь
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - прошел_дождь
+  status: weak
+  frequency: 187
+  merge_target: raining
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: raining
+  display_name: raining
+  definition: Rainfall is visibly occurring in the image.
+  required_visual_cues:
+  - Rainfall is visibly occurring in the image.
+  mutually_exclusive_with:
+  - rain_passed
+  confusable_with:
+  - rain_passed
+  - puddles
+  assertion_types:
+  - weather
+  locations:
+  - layer: base_static
+    entity: weather_conditions
+  aliases:
+  - text: raining
+    lang: en
+    scope: exact
+  - text: идет дождь
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - идет_дождь
+  status: primary
+  frequency: 47
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: residential_area_camera
+  display_name: residential area camera
+  definition: The camera view is visually consistent with residential area camera.
+  required_visual_cues:
+  - The camera view is visually consistent with residential area camera.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - scene
+  locations:
+  - layer: base_static
+    entity: scene_location
+  aliases:
+  - text: residential area camera
+    lang: en
+    scope: exact
+  - text: камера в жилом массиве
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - камера_в_жилом_массиве
+  status: primary
+  frequency: 168
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: residential_parking
+  display_name: residential-area parking
+  definition: Parking visibly associated with apartment blocks or a residential courtyard.
+  required_visual_cues:
+  - Parking visibly associated with apartment blocks or a residential courtyard.
+  mutually_exclusive_with: []
+  confusable_with:
+  - car_parking
+  - underground_parking
+  assertion_types:
+  - infrastructure
+  locations:
+  - layer: detailed_static
+    entity: city_infrastructure_objects
+  aliases:
+  - text: residential-area parking
+    lang: en
+    scope: exact
+  - text: residential parking
+    lang: en
+    scope: legacy
+  - text: придомовая парковка
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - придомовая_парковка
+  status: primary
+  frequency: 1283
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: river
+  display_name: river or lake
+  definition: A visible inland water body annotated as either a river or a lake.
+  required_visual_cues:
+  - A visible inland water body annotated as either a river or a lake.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - object_or_feature
+  locations:
+  - layer: detailed_static
+    entity: other_features
+  aliases:
+  - text: river or lake
+    lang: en
+    scope: exact
+  - text: river
+    lang: en
+    scope: legacy
+  - text: река or озеро
+    lang: ru
+    scope: exact
+  - text: река
+    lang: ru
+    scope: narrow
+  - text: озеро
+    lang: ru
+    scope: narrow
+  - text: lake
+    lang: en
+    scope: narrow
+  source_labels_ru:
+  - река[slash]озеро
+  status: primary
+  frequency: 340
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: road_turn
+  display_name: road turn
+  definition: The visible road scene is annotated with road turn.
+  required_visual_cues:
+  - The visible road scene is annotated with road turn.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - road_state
+  locations:
+  - layer: detailed_static
+    entity: road_situation
+  aliases:
+  - text: road turn
+    lang: en
+    scope: exact
+  - text: поворот дороги
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - поворот_дороги
+  status: primary
+  frequency: 305
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: roundabout
+  display_name: roundabout
+  definition: The visible road scene is annotated with roundabout.
+  required_visual_cues:
+  - The visible road scene is annotated with roundabout.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - road_state
+  locations:
+  - layer: detailed_static
+    entity: road_situation
+  aliases:
+  - text: roundabout
+    lang: en
+    scope: exact
+  - text: кольцевая or круговая развязка
+    lang: ru
+    scope: exact
+  - text: кольцевая
+    lang: ru
+    scope: narrow
+  - text: круговая развязка
+    lang: ru
+    scope: narrow
+  source_labels_ru:
+  - кольцевая[slash]круговая_развязка
+  status: primary
+  frequency: 129
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: school
+  display_name: school
+  definition: A building or grounds visually identifiable as a school; generic institutional
+    appearance alone is insufficient.
+  required_visual_cues:
+  - A building or grounds visually identifiable as a school; generic institutional
+    appearance alone is insufficient.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - building_or_facility
+  locations:
+  - layer: detailed_static
+    entity: common_city_buildings
+  aliases:
+  - text: school
+    lang: en
+    scope: exact
+  - text: школа
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - школа
+  status: rare
+  frequency: 15
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: scooter
+  display_name: motor scooter or kick scooter
+  definition: The visible road scene is annotated with motor scooter or kick scooter.
+  required_visual_cues:
+  - The visible road scene is annotated with motor scooter or kick scooter.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - road_state
+  locations:
+  - layer: detailed_static
+    entity: road_situation
+  aliases:
+  - text: motor scooter or kick scooter
+    lang: en
+    scope: exact
+  - text: scooter
+    lang: en
+    scope: legacy
+  - text: скутер or самокат
+    lang: ru
+    scope: exact
+  - text: скутер
+    lang: ru
+    scope: narrow
+  - text: самокат
+    lang: ru
+    scope: narrow
+  - text: motor scooter
+    lang: en
+    scope: narrow
+  - text: kick scooter
+    lang: en
+    scope: narrow
+  source_labels_ru:
+  - скутер[slash]самокат
+  status: primary
+  frequency: 37
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: several_pedestrians
+  display_name: several visible pedestrians
+  definition: More than one pedestrian is visible, but the scene is not annotated
+    as a crowd.
+  required_visual_cues:
+  - More than one pedestrian is visible, but the scene is not annotated as a crowd.
+  mutually_exclusive_with:
+  - without_pedestrians
+  confusable_with:
+  - without_pedestrians
+  - crowd
+  assertion_types:
+  - object_or_feature
+  locations:
+  - layer: detailed_static
+    entity: other_features
+  aliases:
+  - text: several visible pedestrians
+    lang: en
+    scope: exact
+  - text: several pedestrians
+    lang: en
+    scope: legacy
+  - text: несколько пешеходов
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - несколько_пешеходов
+  status: primary
+  frequency: 1790
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: shop
+  display_name: shop
+  definition: The visible scene contains shop.
+  required_visual_cues:
+  - The visible scene contains shop.
+  mutually_exclusive_with: []
+  confusable_with:
+  - shopping_mall
+  - market
+  - kiosk
+  assertion_types:
+  - building_or_facility
+  locations:
+  - layer: detailed_static
+    entity: common_city_buildings
+  aliases:
+  - text: shop
+    lang: en
+    scope: exact
+  - text: магазин
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - магазин
+  status: primary
+  frequency: 726
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: shopping_mall
+  display_name: shopping mall
+  definition: The visible scene contains shopping mall.
+  required_visual_cues:
+  - The visible scene contains shopping mall.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - building_or_facility
+  locations:
+  - layer: detailed_static
+    entity: common_city_buildings
+  aliases:
+  - text: shopping mall
+    lang: en
+    scope: exact
+  - text: торговый центр
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - торговый_центр
+  status: primary
+  frequency: 173
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: sidewalk
+  display_name: sidewalk
+  definition: The visible scene contains sidewalk.
+  required_visual_cues:
+  - The visible scene contains sidewalk.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - infrastructure
+  locations:
+  - layer: detailed_static
+    entity: city_infrastructure_objects
+  aliases:
+  - text: sidewalk
+    lang: en
+    scope: exact
+  - text: тротуар
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - тротуар
+  status: primary
+  frequency: 2702
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: smoke
+  display_name: smoke
+  definition: The visible scene contains smoke.
+  required_visual_cues:
+  - The visible scene contains smoke.
+  mutually_exclusive_with: []
+  confusable_with:
+  - fire
+  - foggy
+  assertion_types:
+  - object_or_feature
+  locations:
+  - layer: detailed_static
+    entity: other_features
+  aliases:
+  - text: smoke
+    lang: en
+    scope: exact
+  - text: дым
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - дым
+  status: rare
+  frequency: 2
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: snowing
+  display_name: snowing
+  definition: The visible weather condition is snowing.
+  required_visual_cues:
+  - The visible weather condition is snowing.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - weather
+  locations:
+  - layer: base_static
+    entity: weather_conditions
+  aliases:
+  - text: snowing
+    lang: en
+    scope: exact
+  - text: идет снег
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - идет_снег
+  status: rare
+  frequency: 3
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: sports_ground
+  display_name: sports ground
+  definition: The visible scene contains sports ground.
+  required_visual_cues:
+  - The visible scene contains sports ground.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - building_or_facility
+  locations:
+  - layer: detailed_static
+    entity: common_city_buildings
+  aliases:
+  - text: sports ground
+    lang: en
+    scope: exact
+  - text: спортивная площадка
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - спортивная_площадка
+  status: primary
+  frequency: 92
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: stadium
+  display_name: stadium
+  definition: The visible scene contains stadium.
+  required_visual_cues:
+  - The visible scene contains stadium.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - building_or_facility
+  locations:
+  - layer: detailed_static
+    entity: common_city_buildings
+  aliases:
+  - text: stadium
+    lang: en
+    scope: exact
+  - text: стадион
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - стадион
+  status: rare
+  frequency: 8
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: stairs
+  display_name: stairs
+  definition: A clearly visible flight of steps; ramps, ladders, and indistinct entrance
+    platforms are excluded.
+  required_visual_cues:
+  - A clearly visible flight of steps; ramps, ladders, and indistinct entrance platforms
+    are excluded.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - object_or_feature
+  locations:
+  - layer: detailed_static
+    entity: other_features
+  aliases:
+  - text: stairs
+    lang: en
+    scope: exact
+  - text: лестница
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - лестница
+  status: primary
+  frequency: 435
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: statue
+  display_name: statue
+  definition: The visible scene contains statue.
+  required_visual_cues:
+  - The visible scene contains statue.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - object_or_feature
+  locations:
+  - layer: detailed_static
+    entity: other_features
+  aliases:
+  - text: statue
+    lang: en
+    scope: exact
+  - text: статуя
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - статуя
+  status: primary
+  frequency: 224
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: street_camera
+  display_name: urban street overview
+  definition: A broad urban street overview in which roads and surrounding buildings
+    form the scene; vehicle monitoring is not necessarily the dominant purpose.
+  required_visual_cues:
+  - A broad urban street overview in which roads and surrounding buildings form the
+    scene; vehicle monitoring is not necessarily the dominant purpose.
+  mutually_exclusive_with: []
+  confusable_with:
+  - traffic_camera
+  - residential_area_camera
+  assertion_types:
+  - scene
+  locations:
+  - layer: base_static
+    entity: scene_location
+  aliases:
+  - text: urban street overview
+    lang: en
+    scope: exact
+  - text: street camera
+    lang: en
+    scope: legacy
+  - text: камера посреди улицы
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - камера_посреди_улицы
+  status: primary
+  frequency: 1836
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: sunny
+  display_name: sunny
+  definition: Direct sunlight or clear cast shadows provide evidence of sunny conditions.
+  required_visual_cues:
+  - Direct sunlight or clear cast shadows provide evidence of sunny conditions.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - weather
+  locations:
+  - layer: base_static
+    entity: weather_conditions
+  aliases:
+  - text: sunny
+    lang: en
+    scope: exact
+  - text: солнечно
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - солнечно
+  status: primary
+  frequency: 1254
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: traffic_camera
+  display_name: roadway traffic view
+  definition: A roadway-focused view where the road, moving or queued vehicles, lanes,
+    or traffic control infrastructure are the dominant subject.
+  required_visual_cues:
+  - A roadway-focused view where the road, moving or queued vehicles, lanes, or traffic
+    control infrastructure are the dominant subject.
+  mutually_exclusive_with: []
+  confusable_with:
+  - street_camera
+  - parking_camera
+  assertion_types:
+  - scene
+  locations:
+  - layer: base_static
+    entity: scene_location
+  aliases:
+  - text: roadway traffic view
+    lang: en
+    scope: exact
+  - text: traffic camera
+    lang: en
+    scope: legacy
+  - text: придорожная камера
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - придорожная_камера
+  status: weak
+  frequency: 407
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: traffic_jam
+  display_name: traffic jam
+  definition: A visibly congested road with closely queued or slow vehicles.
+  required_visual_cues:
+  - A visibly congested road with closely queued or slow vehicles.
+  mutually_exclusive_with:
+  - empty_road
+  confusable_with: []
+  assertion_types:
+  - road_state
+  locations:
+  - layer: detailed_static
+    entity: road_situation
+  aliases:
+  - text: traffic jam
+    lang: en
+    scope: exact
+  - text: пробка
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - пробка
+  status: primary
+  frequency: 122
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: traffic_light
+  display_name: traffic light
+  definition: The visible road scene is annotated with traffic light.
+  required_visual_cues:
+  - The visible road scene is annotated with traffic light.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - road_state
+  locations:
+  - layer: detailed_static
+    entity: road_situation
+  aliases:
+  - text: traffic light
+    lang: en
+    scope: exact
+  - text: светофор
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - светофор
+  status: primary
+  frequency: 1139
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: train_station
+  display_name: railway terminal building
+  definition: 'A substantial railway terminal or station building (Russian source:
+    железнодорожный вокзал).'
+  required_visual_cues:
+  - 'A substantial railway terminal or station building (Russian source: железнодорожный
+    вокзал).'
+  mutually_exclusive_with: []
+  confusable_with:
+  - railway
+  - railway_station
+  assertion_types:
+  - infrastructure
+  locations:
+  - layer: detailed_static
+    entity: city_infrastructure_objects
+  aliases:
+  - text: railway terminal building
+    lang: en
+    scope: exact
+  - text: train station
+    lang: en
+    scope: legacy
+  - text: железнодорожный вокзал
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - железнодорожный_вокзал
+  status: primary
+  frequency: 21
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: tramway_tracks
+  display_name: tramway tracks
+  definition: A pair of rails used by trams, normally embedded in or directly alongside
+    a roadway; do not infer this from an ordinary railway corridor.
+  required_visual_cues:
+  - A pair of rails used by trams, normally embedded in or directly alongside a roadway;
+    do not infer this from an ordinary railway corridor.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - infrastructure
+  locations:
+  - layer: detailed_static
+    entity: city_infrastructure_objects
+  aliases:
+  - text: tramway tracks
+    lang: en
+    scope: exact
+  - text: трамвайные пути
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - трамвайные_пути
+  status: primary
+  frequency: 240
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: trash_container
+  display_name: trash container
+  definition: The visible scene contains trash container.
+  required_visual_cues:
+  - The visible scene contains trash container.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - infrastructure
+  locations:
+  - layer: detailed_static
+    entity: city_infrastructure_objects
+  aliases:
+  - text: trash container
+    lang: en
+    scope: exact
+  - text: мусорный контейнер
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - мусорный_контейнер
+  status: primary
+  frequency: 36
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: undefined_commercial_building
+  display_name: unclassified commercial building
+  definition: A building whose commercial function has direct visible support; a generic
+    modern or institutional building is insufficient.
+  required_visual_cues:
+  - A building whose commercial function has direct visible support; a generic modern
+    or institutional building is insufficient.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - building_or_facility
+  locations:
+  - layer: detailed_static
+    entity: common_city_buildings
+  aliases:
+  - text: unclassified commercial building
+    lang: en
+    scope: exact
+  - text: undefined commercial building
+    lang: en
+    scope: legacy
+  - text: коммерческое здание
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - коммерческое_здание
+  status: primary
+  frequency: 82
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: underground_parking
+  display_name: underground parking
+  definition: The visible scene contains underground parking.
+  required_visual_cues:
+  - The visible scene contains underground parking.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - infrastructure
+  locations:
+  - layer: detailed_static
+    entity: city_infrastructure_objects
+  aliases:
+  - text: underground parking
+    lang: en
+    scope: exact
+  - text: подземная парковка
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - подземная_парковка
+  status: rare
+  frequency: 8
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: underground_stairs
+  display_name: underground stairs
+  definition: The visible scene contains underground stairs.
+  required_visual_cues:
+  - The visible scene contains underground stairs.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - infrastructure
+  locations:
+  - layer: detailed_static
+    entity: city_infrastructure_objects
+  aliases:
+  - text: underground stairs
+    lang: en
+    scope: exact
+  - text: подземная лестница
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - подземная_лестница
+  status: primary
+  frequency: 21
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: utility_works
+  display_name: utility works
+  definition: Visible road or municipal works supported by direct cues such as excavation,
+    work machinery, cones, temporary work barriers, or identifiable workers.
+  required_visual_cues:
+  - Visible road or municipal works supported by direct cues such as excavation, work
+    machinery, cones, temporary work barriers, or identifiable workers.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - road_state
+  locations:
+  - layer: detailed_static
+    entity: road_situation
+  aliases:
+  - text: utility works
+    lang: en
+    scope: exact
+  - text: коммунальные работы
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - коммунальные_работы
+  status: primary
+  frequency: 93
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: wide_angle_camera
+  display_name: wide angle camera
+  definition: The image visibly has the quality characteristic wide angle camera.
+  required_visual_cues:
+  - The image visibly has the quality characteristic wide angle camera.
+  mutually_exclusive_with: []
+  confusable_with: []
+  assertion_types:
+  - quality
+  locations:
+  - layer: base_static
+    entity: image_quality
+  aliases:
+  - text: wide angle camera
+    lang: en
+    scope: exact
+  - text: широкоугольный обзор
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - широкоугольный_обзор
+  status: primary
+  frequency: 2747
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+- label_id: without_pedestrians
+  display_name: no visible pedestrians
+  definition: The visible scene is annotated as containing no pedestrians.
+  required_visual_cues:
+  - The visible scene is annotated as containing no pedestrians.
+  mutually_exclusive_with:
+  - several_pedestrians
+  - crowd
+  confusable_with:
+  - several_pedestrians
+  - crowd
+  assertion_types:
+  - object_or_feature
+  locations:
+  - layer: detailed_static
+    entity: other_features
+  aliases:
+  - text: no visible pedestrians
+    lang: en
+    scope: exact
+  - text: without pedestrians
+    lang: en
+    scope: legacy
+  - text: нет пешеходов
+    lang: ru
+    scope: exact
+  source_labels_ru:
+  - нет_пешеходов
+  status: primary
+  frequency: 939
+  merge_target: null
+  coverage_semantics: positive_only_unjudged_when_missing
+ontology_hash: df911f3ecc85b728f34ef354d853657e81ce43403f8c95f499f83cd530fd7e39
