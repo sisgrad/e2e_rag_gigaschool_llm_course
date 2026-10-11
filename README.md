@@ -113,6 +113,14 @@ trusted fact chunks. Для каждого label он строит тексто�
 контрольной точки. Он описывает задачу, происхождение producer/verifier-разметки,
 EDA, подготовку корпуса и базовые retrieval-эксперименты.
 
+`notebooks/v0/control_point_2_v0.ipynb` воспроизводит baseline, поэтапную
+предобработку, сравнение четырёх Chonkie-чанкеров, semantic ablation,
+parent/child retrieval с BGE-M3, сравнение fact-chunks с чанкированием
+сырых описаний, применение метаданных и LLM-преобразования. Важные
+package-функции показываются в notebook через `inspect.getsource`, как в
+КТ-1. Дорогие промежуточные результаты кэшируются в игнорируемом
+`evaluation/v0/output/`.
+
 Notebook является самостоятельным: он не должен импортировать или запускать
 Python-скрипты из своей директории. Локальные `.py`-генераторы notebook
 игнорируются Git; при необходимости notebook может использовать публичные
@@ -136,6 +144,8 @@ dataset, images, EDA и evaluation. Скрипты версии v0 должны 
 - `gigaschool_rag.versions.v0.eda` — расчёт и сохранение EDA;
 - `gigaschool_rag.versions.v0.evaluation` — канонический gold, rejected
   candidates и TF-IDF evaluation;
+- `gigaschool_rag.versions.v0.control_point_2` — предобработка, Chonkie,
+  metadata/LLM experiments и единый воспроизводимый pipeline КТ-2;
 - `gigaschool_rag.versions.v0.resources` — неизменяемые versioned evaluation
   resources, доступные через `importlib.resources`.
 
